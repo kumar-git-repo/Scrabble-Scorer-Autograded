@@ -141,7 +141,7 @@ const scoringAlgorithms = [simple, bonusVowels, scrabble];
 function scorerPrompt() {
    //console.log("Let's play some scrabble! Enter a word:");
    //let wordEntered = input.question("Enter a word to Scroe:");
-   wordEntered = initialPrompt()
+   let wordEntered1 = initialPrompt()
    console.log("Which scoring algorithm would you like to use?\n", 
    "0 - Simple: One point per character\n", 
    "1 - Vowel Bonus: Vowels are worth 3 points\n", 
@@ -150,13 +150,13 @@ function scorerPrompt() {
 
    if (scoringMethod === 0) {
    console.log("algorithm name: ", scoringAlgorithms[0].name);
-   console.log(`score for '${wordEntered}' : ${scoringAlgorithms[0].scorerFunction(wordEntered)}`);
+   console.log(`score for '${wordEntered1}' : ${scoringAlgorithms[0].scorerFunction(wordEntered1)}`);
    } else if (scoringMethod === 1) {
    console.log("algorithm name: ", scoringAlgorithms[1].name);
-   console.log(`score for '${wordEntered}' : ${scoringAlgorithms[1].scorerFunction(wordEntered)}`);
+   console.log(`score for '${wordEntered1}' : ${scoringAlgorithms[1].scorerFunction(wordEntered1)}`);
    } else if (scoringMethod === 2) {
    console.log("algorithm name: ", scoringAlgorithms[2].name);
-   console.log(`score for '${wordEntered}' : ${scoringAlgorithms[2].scorerFunction(wordEntered)}`);
+   console.log(`score for '${wordEntered1}' : ${scoringAlgorithms[2].scorerFunction(wordEntered1)}`);
    }
 
    }
